@@ -1,0 +1,25 @@
+{
+	"name": "starter-plugin",
+	"version": "1.0.0",
+	"description": "A starter WordPress plugin scaffolded by WP Crucible.",
+	"private": true,
+	"license": "GPL-2.0-or-later",
+	"engines": {
+		"node": ">=18"
+	},
+	"devDependencies": {
+		"@wordpress/env": "11.6.0",
+		"@wordpress/scripts": "32.2.0",
+		"lint-staged": "17.0.5"
+	},
+	"scripts": {
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"lint:js": "wp-scripts lint-js assets/src",
+		"lint:css": "wp-scripts lint-style assets/src/css",
+		"format": "wp-scripts format assets/src",
+		"env:start": "wp-env start",
+		"env:stop": "wp-env stop",
+		"plugin-check": "wp-env run cli wp plugin check starter-plugin"
+	}
+}
