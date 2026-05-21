@@ -25,22 +25,8 @@ foreach ( $starter_plugin_options as $starter_plugin_option ) {
 	delete_option( $starter_plugin_option );
 }
 
-// Uncomment when using custom database tables:
-// global $wpdb;
-// $wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}starter_plugin_example" ); // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.DirectDatabaseQuery.SchemaChange
-
 // Clear any scheduled cron events.
 wp_unschedule_hook( 'starter_plugin_daily_cleanup' );
-
-// Uncomment for multisite network-wide cleanup:
-// if ( is_multisite() ) {
-// 	$starter_plugin_sites = get_sites( [ 'fields' => 'ids', 'number' => 0 ] );
-// 	foreach ( $starter_plugin_sites as $starter_plugin_site_id ) {
-// 		switch_to_blog( $starter_plugin_site_id );
-// 		// Run per-site option/transient cleanup here.
-// 		restore_current_blog();
-// 	}
-// }
 
 // Clear transients with plugin prefix.
 global $wpdb;
