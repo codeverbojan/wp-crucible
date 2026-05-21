@@ -19,6 +19,7 @@ if ( ! defined( 'ABSPATH' ) || ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 // and any options registered via register_setting() in Admin/SettingsPage.php.
 $starter_plugin_options = [
 	'starter_plugin_version',
+	'starter_plugin_options',
 ];
 
 foreach ( $starter_plugin_options as $starter_plugin_option ) {

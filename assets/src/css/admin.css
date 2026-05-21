@@ -1,1 +1,13 @@
-/* Starter Plugin — Admin styles. */
+/* Settings page layout. */
+.starter-plugin-settings .form-table th {
+	width: 200px;
+}
+
+/* Dismissible admin notices. */
+.starter-plugin-notice {
+	position: relative;
+}
+
+.starter-plugin-notice .notice-dismiss {
+	text-decoration: none;
+}

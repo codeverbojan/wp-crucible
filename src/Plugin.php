@@ -67,6 +67,11 @@ class Plugin {
 		register_activation_hook( STARTER_PLUGIN_FILE, [ $this, 'activate' ] );
 		register_deactivation_hook( STARTER_PLUGIN_FILE, [ $this, 'deactivate' ] );
 
+		if ( is_admin() ) {
+			$settings_page = new Admin\SettingsPage();
+			$settings_page->register();
+		}
+
 		// --- Register additional feature hooks below this line ---
 	}
 
