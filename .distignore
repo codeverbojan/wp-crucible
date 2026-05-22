@@ -1,0 +1,40 @@
+# Version control
+.git/
+.github/
+.gitignore
+.gitkeep
+
+# Dependencies (not shipped — Composer autoloader is custom in main file)
+node_modules/
+vendor/
+
+# Development & testing
+tests/
+bin/
+phpcs.xml.dist
+phpstan.neon
+phpunit.xml.dist
+composer.json
+composer.lock
+package.json
+package-lock.json
+webpack.config.js
+.wp-env.json
+.wp-env.override.json
+.editorconfig
+.phpunit.result.cache
+
+# AI assistant files
+CLAUDE.md
+AGENTS.md
+README.md
+.claudeignore
+/.claude/
+/.plans/
+
+# wp.org assets (uploaded separately via SVN)
+/.wordpress-org/
+
+# OS files
+.DS_Store
+Thumbs.db
