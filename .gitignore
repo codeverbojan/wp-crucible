@@ -20,3 +20,4 @@ Thumbs.db
 
 # Distribution
 *.zip
+.phpunit.result.cache
