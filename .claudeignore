@@ -1,0 +1,9 @@
+LICENSE
+vendor/
+node_modules/
+assets/build/
+languages/*.pot
+*.lock
+bin/
+.wordpress-org/
+.git/
